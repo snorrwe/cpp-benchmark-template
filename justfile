@@ -1,6 +1,8 @@
 _default:
     @just --list
 
+all: generate build run
+
 generate:
     cmake -GNinja -Bbuild -DCMAKE_BUILD_TYPE=Release \
         -DFETCHCONTENT_QUIET=OFF
