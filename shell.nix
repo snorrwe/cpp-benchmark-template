@@ -9,7 +9,6 @@ in
     clang-tools
 
     pkg-config
-    gtest
 
     cmake
     ninja
