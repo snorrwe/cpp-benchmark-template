@@ -7,3 +7,10 @@ generate:
 
 build:
     cmake --build build
+
+run:
+    #!/usr/bin/env bash
+
+    set -euo pipefail
+    cd build
+    ./bench --benchmark_enable_random_interleaving=true
